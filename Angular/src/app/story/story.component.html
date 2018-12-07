@@ -1,0 +1,25 @@
+
+<body>
+<form>
+    <mat-form-field>
+        <input matInput placeholder="Your Title" name = "title" maxlength="30" [(ngModel)]="Title">
+    </mat-form-field>
+    <br>
+
+    <ckeditor [editor]="Editor" (ready)="onReady($event)" name = "event" [(ngModel)]="StoryContent"></ckeditor>
+    <br>
+
+    <mat-form-field>
+        <p>Category</p>
+        <mat-select [(value)]="Category">
+            <mat-option value="1">Angry</mat-option>
+            <mat-option value="2">Funny</mat-option>
+            <mat-option value="3">Inspirational</mat-option>
+            <mat-option value="4">Emotional</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" mat-button (click)="openSnackBar()" (click)="submit() " [mat-dialog-close]="true">Submit</button>
+
+</form>
+</body>

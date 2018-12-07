@@ -1,0 +1,32 @@
+body{
+    min-height: 400px;
+    max-height: 600px;
+    max-width: 900px;
+    background: white;
+}.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 700px;
+}
+.story{
+    height: 200px;
+}
+.upload{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 38% ;
+    alignment: center;
+    width: 800px;
+    height: 500px;
+    padding: 60px 40px;
+}
+.size{
+    min-height: 500px;
+}

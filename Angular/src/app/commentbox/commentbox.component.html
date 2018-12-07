@@ -1,0 +1,8 @@
+<button class ="button" (click) ="toggleComments()">Add Comment</button>
+<ng-container *ngIf ="showComment">
+    <div class="commentbox">
+        <textarea rows="4" cols="30" [(ngModel)]="message" placeholder="Message" class="message"></textarea>
+        <br>
+        <button (click) = postComments() class="clickme"> Post</button>
+    </div>
+</ng-container>

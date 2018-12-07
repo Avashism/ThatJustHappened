@@ -1,0 +1,15 @@
+<div class="info" align="center">
+    <img src="./assets/images/user.jpg">
+    <h1>{{uname}}</h1>
+    <h1>{{fname}} {{lname}}</h1>
+    <h3>{{email}}</h3>
+    <h1>Your Stories so far :</h1>
+    <div class="header" *ngFor="let story of stories.reverse()">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title class="title" (click)= "dtitle = story.title; test = story.storyContent; openDialog(); ">{{story.title}}</mat-card-title>
+            </mat-card-header>
+        </mat-card>
+    </div>
+</div>
+

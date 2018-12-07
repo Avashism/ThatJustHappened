@@ -1,0 +1,19 @@
+<body>
+    <mdb-navbar-brand>
+        <button mdbBtn type="button" color="grey" class="waves-light" mdbWavesEffect (click)="sidenav.open()"><i class="fa fa-bars"></i><strong> Categories</strong></button>
+    </mdb-navbar-brand>
+<div align="center"><button mdbBtn type="button" color="grey" class="book" mdbWavesEffect (click)="openDialog()"><strong>Upload your story</strong></button></div>
+<div class="sidego2">
+    <mat-sidenav-container class="container">
+        <mat-sidenav  #sidenav class="sidenav" mode="push">
+            <ul>
+                <li><a [routerLink]="['/userland' ,{ outlets: { category: ['1'] } }]">Angry</a></li>
+                <li><a [routerLink]="['/userland' ,{ outlets: { category: ['2'] } }]">Funny </a></li>
+                <li><a [routerLink]="['/userland' ,{ outlets: { category: ['3'] } }]">Inspiring</a></li>
+                <li><a [routerLink]="['/userland' ,{ outlets: { category: ['4'] } }]">Emotional</a></li>
+            </ul>
+        </mat-sidenav>
+        <router-outlet name = 'category'></router-outlet>
+    </mat-sidenav-container>
+</div>
+</body>

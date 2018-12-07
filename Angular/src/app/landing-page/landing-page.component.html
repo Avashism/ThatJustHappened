@@ -1,0 +1,78 @@
+<!--<html>
+
+
+</body>
+
+</html>-->
+<html>
+<script src="typed.js"></script>
+<body>
+<mdb-carousel [isControls]="true"  [animation]="'slide'" [interval]="2000">
+    <mdb-carousel-item>
+        <div class="slideshow" align="center" >
+        <h1>{{stories1[0].title}}</h1>
+<h2 [innerHTML] = stories1[0].storyContent></h2>
+            <h1 class="Reacts">😡{{stories1[0].reacts}}+</h1>
+            <h3>{{stories1[0].username}}</h3>
+
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+        <div class="slideshow" align="center" >
+            <h1>{{stories2[0].title}}</h1>
+            <h2 [innerHTML] = stories2[0].storyContent></h2>
+
+            <h1 class="Reacts">😂{{stories2[0].reacts}}+</h1>
+            <h3>{{stories2[0].username}}</h3>
+
+        </div>
+    </mdb-carousel-item><mdb-carousel-item>
+    <div class="slideshow" align="center" >
+        <h1>{{stories3[0].title}}</h1>
+        <h2 [innerHTML] = stories3[0].storyContent></h2>
+
+        <h1 class="Reacts">😇{{stories1[0].reacts}}+</h1>
+        <h3>{{stories3[0].username}}</h3>
+
+    </div>
+</mdb-carousel-item>
+    <mdb-carousel-item>
+        <div class="slideshow" align="center" >
+            <h1>{{stories4[0].title}}</h1>
+            <h2 [innerHTML] = stories4[0].storyContent></h2>
+
+            <h1 class="Reacts">😢{{stories4[0].reacts}}+</h1>
+            <h3>{{stories4[0].username}}</h3>
+
+        </div>
+    </mdb-carousel-item>
+</mdb-carousel>
+<div align="center">
+<a routerLink ="userland"><button mdbBtn type="button" color="grey" class="book" mdbWavesEffect><strong>Surf The Whole Story Book Here!</strong></button></a>
+</div>
+<div class="first">
+<i class="material-icons">
+    create
+</i>
+<h1>SHARE</h1>
+</div>
+<div class="second">
+<i class="material-icons">
+    import_contacts
+</i>
+<h1>READ</h1>
+</div>
+<div class="third">
+<i class="material-icons">
+    mood
+</i>
+<h1>ENJOY!</h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

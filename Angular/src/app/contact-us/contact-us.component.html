@@ -1,0 +1,68 @@
+
+<body><div class="pb-5">
+    <form class="flex-center justify-content-center"> <!--#form1="ngForm" (onSubmit)="onSubmit()"-->
+        <div class="col-lg-4 my-md-4">
+            <mdb-card>
+                <mdb-card-body>
+                    <div class="form-header white accent-1">
+                        <h3><i class="fa fa-envelope"></i> Contact Us </h3>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-user prefix grey-text"></i>
+                        <input mdbInputDirective required type="text" id="Name" class="form-control" data-error=" " data-success =" "  name="Name" [(ngModel)] = "name"><!--name="Name" [(ngModel)] = "Name"  #Name="ngModel-->
+                        <label for="name"> Name </label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input mdbInputDirective required type="text" id="Email" class="form-control" name="Email" data-error=" " data-success =" " [(ngModel)] = "email"> <!--name="Email" [(ngModel)] = "Email"  #Email="ngModel"-->
+                        <label for="email"> Email </label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-pencil prefix grey-text"></i>
+                        <textarea mdbInputDirective type="text" id="message" class="md-textarea" name="Message" data-error=" " data-success =" " [(ngModel)] = "message"></textarea><!-- [(ngModel)] = "Message"  #Message="ngModel"-->
+                        <label for="message">Message</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button mdbBtn color="grey" class="waves-light" mdbWavesEffect (click)="onSubmit()"> Submit </button>
+                    </div>
+                </mdb-card-body>
+            </mdb-card>
+        </div>
+
+    </form>
+</div>
+    <div align="center">
+        <div class="col-lg-7">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a mdbBtn floating="true" color="white" class="accent-1 waves-light" mdbWavesEffect>
+                        <i class="fa fa-map-marker"></i>
+                    </a>
+                    <p>Hammond, LA 70401</p>
+                    <p>United States</p>
+                </div>
+
+                <div class="col-md-4">
+                    <a mdbBtn floating="true" color="white" class="accent-1 waves-light" mdbWavesEffect>
+                        <i class="fa fa-phone"></i>
+                    </a>
+                    <p>+1 985 956 0000</p>
+                    <p>+1 985 956 1111</p>
+                    <p>Mon - Fri, 8:00-5:00</p>
+                </div>
+
+                <div class="col-md-4">
+                    <a mdbBtn floating="true" color="white" class="accent-1 waves-light" mdbWavesEffect>
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <p>contact-TJH@selu.edu</p>
+                    <p>sponsor-TJH@selu.edu</p>
+                </div>
+        </div>
+    </div>
+    </div>
+</body>

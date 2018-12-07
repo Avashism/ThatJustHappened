@@ -1,0 +1,74 @@
+<!--
+
+<div class="behind">
+    <div class="error">{{responded}}</div>
+        <div class="loginbox">
+            <h2 class="signin"><strong> Sign in </strong> </h2>
+            <form #f="ngForm" (ngSubmit)="onSubmit()" >
+                <mat-form-field class="example-full-width">
+                <input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" matInput placeholder="Email" name="email" required [(ngModel)] = "email">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                <input type="password" matInput placeholder="Password" name="password" required [(ngModel)] = "password">
+                </mat-form-field>
+                <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+                <label class="form-check-label" for="materialLoginFormRemember"><strong> Remember me. </strong></label>
+                <a class="forgot"  href=""><strong> Forgot password? </strong></a>
+                </div>
+
+                <button (click)="Login()" class="sign" [disabled]="f.invalid">Sign in</button>
+                <br>
+                <br>
+                <p>New? Sign up <a routerLink="/signup" class="signup">HERE</a></p>
+        </form>
+    </div>
+    <p class="text-danger" align="center" *ngIf="responded != 'You have logged in successfully.'">{{responded}}</p>
+
+</div>-->
+
+<div class="pb-5">
+    <div class="error">{{responded}}</div>
+    <form #f="ngForm" (ngSubmit)="onSubmit()" >
+    <div class="flex-center justify-content-center">
+        <div class="col-lg-4 my-md-4">
+            <mdb-card>
+                <h5 class="card-header grey white-text text-center py-4">
+                    <strong> Login </strong>
+                </h5>
+                <mdb-card-body>
+                    <div class="md-form">
+                        <input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" mdbInputDirective required type="text" id="email" class="form-control" name="email" data-error="Invalid Email" data-success =" "  [(ngModel)] = "email">
+                        <label for="email" >Email</label>
+
+                    </div>
+
+                    <div class="md-form">
+                        <input mdbInputDirective required type="password" minlength="1" id="materialRegisterFormPassword" class="form-control"   [mdbValidate]="false"  name="password"  [(ngModel)] = "password">
+                        <label for="materialRegisterFormPassword">Password</label>
+                        <br>
+                        <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                        </small>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+                        <label class="form-check-label" for="materialLoginFormRemember">Remember me. </label>
+                        <a class="forgot"  href=""><strong> Forgot password? </strong></a>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <button mdbBtn color="grey" class="waves-light" mdbWavesEffect (click)="Login()" class="sign" [disabled]="f.invalid"> Sign in  </button>
+                    </div>
+                    <br>
+                    <p>New? Sign up <a routerLink="/signup" class="signup"><strong> Here </strong></a></p>
+                </mdb-card-body>
+            </mdb-card>
+        </div>
+        </div>
+    </form>
+    <p class="text-danger" align="center" *ngIf="responded != 'You have logged in successfully.'">{{responded}}</p>
+</div>
+
+
+

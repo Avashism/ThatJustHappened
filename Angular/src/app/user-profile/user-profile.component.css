@@ -1,0 +1,34 @@
+.info{
+    color: white;
+}
+
+div.header{
+    margin-top: 0.5em;
+    margin-left: 8em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
+
+.title{
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.title:hover{
+    color: #b32d00;
+}
+
+.example-card {
+    /*min-width: 200px;*/
+    width: 300px;
+    background-color: white;
+
+}
+.form-control{
+    width: 800px;
+    height: 47px;
+}
+.storydisplay{
+    background: white;
+}

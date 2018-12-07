@@ -1,0 +1,17 @@
+<header>
+  <div class ="container">
+    <div class ="branding">
+      <h1>TJH<i>!</i><span class="highlighter">That Just Happened !!</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink ="/aboutus">About</a></li>
+        <li><a routerLink ="/contactus">Contact us</a></li>
+        <li><a routerLink ="/login" *ngIf="isUserLoggedIn != '1'" (click)="ngOnInit()">Signin/SignUp</a></li>
+        <li><a routerLink ="/userprofile" *ngIf="isUserLoggedIn == '1'">{{Username}}</a></li>
+        <li><a routerLink ="/login" *ngIf="isUserLoggedIn == '1'" (click)="clearLocal()">Signout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,12 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html{
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #8593AE;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}

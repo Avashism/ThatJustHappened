@@ -1,0 +1,21 @@
+diff a/Angular/src/app/app.component.css b/Angular/src/app/app.component.css	(rejected hunks)
+@@ -31,14 +31,15 @@
+ }
+ .branding{
+   font-family: Chalkduster, fantasy;
+-  color: white;
++  color: black;
+   float: left;
+ }
+ .highlighter{
+-  color: white;
++  color: cornflowerblue;
+   font-style: italic;
+-  font-family: Chalkduster, fantasy;
+-  font-size: 25px;
++  font-family: "Sitka Heading";
++  font-weight: bold;
++  font-size: 35px;
+ 
+ 
+ }

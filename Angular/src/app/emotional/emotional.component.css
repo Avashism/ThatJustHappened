@@ -1,0 +1,49 @@
+
+div.header{
+    margin-top: 0.5em;
+    margin-left: 3em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
+
+.title{
+    cursor: pointer;
+}
+
+.title:hover{
+    color: #b32d00;
+}
+
+.example-card {
+    /*min-width: 200px;*/
+    width: 300px;
+    background-color: white;
+
+}
+.form-control{
+    width: 500px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.parameter{
+    float: left;
+}
+.search{
+    float: left;
+}
+
+::ng-deep .mat-form-field .mat-form-field-infix {
+    min-width: 170px;
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+}
+.bold{
+    font-size: 20px;
+}
+.parameter2{
+    float: right;
+    margin-right: 40px;
+}

@@ -1,0 +1,36 @@
+<h1>EMOTIONAL</h1>
+<div class="parameter">
+  <strong class="bold">Search By </strong>
+  <mat-form-field>
+    <mat-select [(value)]="SearchBy">
+      <mat-option value="username">Username</mat-option>
+      <mat-option value="title">Title</mat-option>
+    </mat-select>
+
+  </mat-form-field>
+</div>
+<div class="search"><input class="form-control" type="text" placeholder="Search...." aria-label="Search" [(ngModel)] = search>
+</div>
+<div class="parameter2">
+  <strong class="bold">Sort By </strong>
+  <mat-form-field>
+    <mat-select [(value)]="SortBy" (valueChange)="sort()">
+      <mat-option value="Date(New - Old)">Date(New - Old)</mat-option>
+      <mat-option value="Most Reacted">Most Reacted</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="header" *ngFor="let story of stories.reverse() | Search: search: SearchBy ">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title class="title" (click)= "dtitle = story.title ;test = story.storyContent; id = story.id; openDialog(); ">{{story.title}}</mat-card-title>
+      <mat-card-subtitle>{{story.username}} </mat-card-subtitle>
+      <mat-card-subtitle> <span [matBadge]="story.reacts" matBadgeOverlap="false">
+        <img src='/assets/images/emotional.jpg'  width="20px" height="20px" align="left"></span></mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</div>

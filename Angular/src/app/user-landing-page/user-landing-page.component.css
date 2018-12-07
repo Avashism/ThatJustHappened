@@ -1,0 +1,95 @@
+.container {
+    width: 100%;
+    margin-top: 30px;
+background: whitesmoke;
+    width: 100%;
+  min-height: 620px;
+  max-height: 100%;
+    min-width: 100%;
+}
+
+.sidenav-content {
+
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.land {
+    transform: rotate(90deg);
+    margin-top: 35%;
+    font-size: 40px;
+    font-family: Georgia;
+    color: white;
+    height: 60px;
+    width: 500px;
+    background: whitesmoke;
+}
+.sidenav {
+    background-image: linear-gradient(45deg, #d7d2cc 0%, #304352 100%);
+    animation: BackgroundGradient 5s ease infinite;
+    width: 150px;
+}
+
+.sidenav a{
+    color: white;
+    font-size: 20px;
+}
+.screen{
+background: whitesmoke;
+    font-size: 30px;
+    font-family: Georgia;
+
+
+}
+.profile{
+    margin-right: 200px;
+    float: right;
+    color: white;
+}
+.cate{
+    color: #517fa4;
+   /* color: white;
+    position: fixed;
+    margin-top: 100px;
+    float: left;
+    width: 30px;
+ cursor: pointer;
+    margin-right: 150px;
+    font-size: 20px;
+    background: #304352;
+    text-align: center;
+*/}
+body{
+    background: whitesmoke;
+}
+h1 {
+    float: left;
+}
+.upload{
+}
+
+.top {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+.top:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+.form-control{
+    width: 800px;
+    height: 47px;
+}
+.book{
+    width: 35%;
+}

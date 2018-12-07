@@ -1,0 +1,44 @@
+html{
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+Body{
+
+  font-size: 15px;
+  line-height:1.5;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+
+}
+.wrapper{
+  min-height: 100%;
+  position: relative;
+}
+.container{
+  width: 80%;
+  margin:auto;
+  overflow: hidden;}
+
+
+
+.center-body{
+min-height: available;
+  background: #8593AE;
+  position: relative;
+}
+footer{
+  position: fixed;
+  text-align: center;
+background: white;
+  height: 50px;
+  bottom: 0px;
+  width: 100%;
+text-align: center;
+}
+.copy{
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+}

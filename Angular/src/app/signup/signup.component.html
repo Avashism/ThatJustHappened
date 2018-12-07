@@ -1,0 +1,85 @@
+<!--
+
+<div class="bodii">
+  <div class="error">{{regRespond}}</div>
+
+  <div class="loginbox">
+  <h2>Sign up</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="FirstName" name="FirstName" [(ngModel)] = "Firstname" required #FirstName="ngModel">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="LastName" name="LastName" [(ngModel)] = "Lastname" required #LastName ="ngModel" >
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" matInput placeholder="Email" name="email" [(ngModel)] = "Email" required #email="ngModel">
+    </mat-form-field>
+    <small *ngIf="!(!email.errors||!email.errors.pattern)">Invalid Email. </small>
+    <br>
+    <mat-form-field class="example-full-width">
+      <input type="password" matInput placeholder="Password" name="Password" [(ngModel)] = "Password" required #password ="ngModel">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <input type="password" matInput placeholder="Re-type Password" name="RPassword" [(ngModel)] = "rpass" #Rpassword = "ngModel" required compare="Password">
+    </mat-form-field>
+    <br>
+    <small *ngIf="Rpassword.errors && (Rpassword.value != null)">Password do not match</small>
+    <a> <button class="sign" (click)="Register()" [disabled]="f.invalid">Sign up</button></a>
+  </form>
+</div>
+</div>
+-->
+<div class="pb-5">
+  <div class="error" align="center">{{regRespond}}</div>
+  <form #form="ngForm" (ngSubmit)="onSubmit()" >
+    <div class="flex-center justify-content-center">
+      <div class="col-lg-4 my-md-4">
+        <mdb-card>
+          <h5 class="card-header grey white-text text-center py-4">
+            <strong> Sign up </strong>
+          </h5>
+          <mdb-card-body>
+            <div class="md-form">
+              <input  mdbInputDirective required type="text"  class="form-control" name="Username" [(ngModel)] = "Username"  #UserName="ngModel" data-error="" data-success =" "  >
+              <label for="email"> UserName </label>
+            </div>
+            <div class="md-form">
+              <input  mdbInputDirective required type="text"  class="form-control" name="FirstName" [(ngModel)] = "Firstname" data-error=" " data-success =" "  #FirstName="ngModel" >
+              <label for="email"> First name </label>
+            </div>
+            <div class="md-form">
+              <input  mdbInputDirective required type="text"  class="form-control" name="LastName" [(ngModel)] = "Lastname" data-error=" " data-success =" "  #LastName ="ngModel" >
+              <label for="email"> Last name </label>
+            </div>
+            <div class="md-form">
+              <input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" mdbInputDirective required type="text" id="email" class="form-control" data-error="Invalid Email" data-success =" "  name="email" [(ngModel)] = "Email"  #email="ngModel">
+              <label for="email"> Email </label>
+            </div>
+
+            <div class="md-form">
+              <input mdbInputDirective required type="password" minlength="8" id="materialRegisterFormPassword" class="form-control"    name="Password" data-error=" " data-success =" "  [(ngModel)] = "Password" required #password ="ngModel">
+              <label for="materialRegisterFormPassword">Password</label>
+              <br>
+              <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                Must be at least 8 characters.
+              </small>
+            </div>
+            <div class="md-form">
+              <input mdbInputDirective required type="password" minlength="8"  id="materialRegisterFormConfirmPassword" class="form-control" name="RPassword" data-error=" " data-success =" " [(ngModel)] = "rpass" #Rpassword = "ngModel" required compare="Password">
+              <label for="materialRegisterFormConfirmPassword">Re-type Password</label>
+            </div>
+            <br>
+            <small *ngIf="Rpassword.errors && (Rpassword.value != null)">Password do not match</small>
+            <div class="text-center">
+              <button mdbBtn color="grey" class="waves-light" mdbWavesEffect (click)="Register()" [disabled]="form.invalid"> Register </button>
+            </div>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+  </form>
+</div>
