@@ -7,6 +7,7 @@ import { Component, OnInit, OnChanges, DoCheck } from '@angular/core';
 })
 export class NavbarComponent implements OnInit, DoCheck {
   isUserLoggedIn;
+  toggle = false ;
   Username = 'check';
   constructor() {
   }
@@ -17,6 +18,9 @@ export class NavbarComponent implements OnInit, DoCheck {
         /*
                 this.ngOnInit();
         */
+    }
+    toggleMenu() {
+    this.toggle = !this.toggle;
     }
 
   ngOnInit() {

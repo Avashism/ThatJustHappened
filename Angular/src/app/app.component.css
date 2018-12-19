@@ -12,14 +12,7 @@ Body{
   min-height: 100%;
 
 }
-.wrapper{
-  min-height: 100%;
-  position: relative;
-}
-.container{
-  width: 80%;
-  margin:auto;
-  overflow: hidden;}
+
 
 
 
@@ -41,4 +34,6 @@ text-align: center;
   color: black;
   text-align: center;
   margin-bottom: 40px;
+}
+.navbar{
 }

@@ -1,8 +1,11 @@
 <header>
-  <div class ="container">
     <div class ="branding">
       <h1>TJH<i>!</i><span class="highlighter">That Just Happened !!</span></h1>
     </div>
+    <!--<div class="mobile">
+        <i class="fa fa-bars act"></i>
+    </div>-->
+    <br>
     <nav>
       <ul>
         <li><a routerLink="/">Home</a></li>
@@ -13,5 +16,5 @@
         <li><a routerLink ="/login" *ngIf="isUserLoggedIn == '1'" (click)="clearLocal()">Signout</a></li>
       </ul>
     </nav>
-  </div>
+
 </header>

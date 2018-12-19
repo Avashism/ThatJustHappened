@@ -25,7 +25,6 @@ import { StoryComponent } from './story/story.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { CommentboxComponent } from './commentbox/commentbox.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { EditorModule } from '@tinymce/tinymce-angular';
@@ -40,6 +39,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchfilterPipe } from './Pipes/searchfilter.pipe';
 import { NamefilterPipe } from './Pipes/namefilter.pipe';
 import {MatBadgeModule} from '@angular/material/badge';
+import {CompareValidatorDirective} from './signup/compare-validator.directive';
 
 
 
@@ -75,16 +75,16 @@ const rules = [
     EmotionalComponent,
     InspiringComponent,
     StoryComponent,
-    CommentboxComponent,
     StorycontentComponent,
     NavbarComponent,
     SearchfilterPipe,
-      NamefilterPipe
+      NamefilterPipe,
+      CompareValidatorDirective,
+
   ],
     entryComponents: [
         StoryComponent,
         AngryComponent,
-        CommentboxComponent
     ],
   imports: [
     HttpClientModule,
@@ -109,7 +109,7 @@ const rules = [
       MatToolbarModule,
       MatListModule,
       MatMenuModule,
-      MatBadgeModule
+      MatBadgeModule,
 
   ], schemas: [ NO_ERRORS_SCHEMA ],
   providers: [UserService, HttpClient],

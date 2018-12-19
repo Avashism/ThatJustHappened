@@ -14,7 +14,8 @@ export class SignupComponent implements OnInit {
     Email;
     Username;
     Password;
-    regRespond
+    regRespond;
+    rpass;
 
     constructor(private _userService: UserService,
                 private router: Router) { }

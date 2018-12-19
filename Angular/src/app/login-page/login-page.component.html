@@ -1,31 +1,4 @@
-<!--
 
-<div class="behind">
-    <div class="error">{{responded}}</div>
-        <div class="loginbox">
-            <h2 class="signin"><strong> Sign in </strong> </h2>
-            <form #f="ngForm" (ngSubmit)="onSubmit()" >
-                <mat-form-field class="example-full-width">
-                <input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" matInput placeholder="Email" name="email" required [(ngModel)] = "email">
-                </mat-form-field>
-                <mat-form-field class="example-full-width">
-                <input type="password" matInput placeholder="Password" name="password" required [(ngModel)] = "password">
-                </mat-form-field>
-                <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
-                <label class="form-check-label" for="materialLoginFormRemember"><strong> Remember me. </strong></label>
-                <a class="forgot"  href=""><strong> Forgot password? </strong></a>
-                </div>
-
-                <button (click)="Login()" class="sign" [disabled]="f.invalid">Sign in</button>
-                <br>
-                <br>
-                <p>New? Sign up <a routerLink="/signup" class="signup">HERE</a></p>
-        </form>
-    </div>
-    <p class="text-danger" align="center" *ngIf="responded != 'You have logged in successfully.'">{{responded}}</p>
-
-</div>-->
 
 <div class="pb-5">
     <div class="error">{{responded}}</div>

@@ -24,7 +24,7 @@
 <br>
 <br>
 <br>
-<div class="header" *ngFor="let story of stories.reverse() | Search: search: SearchBy ">
+<div class="header" *ngFor="let story of stories | Search: search: SearchBy ">
     <mat-card class="example-card">
         <mat-card-header>
         <mat-card-title class="title" (click)= "dtitle = story.title; test = story.storyContent; id = story.id; openDialog(); ">{{story.title}}</mat-card-title>

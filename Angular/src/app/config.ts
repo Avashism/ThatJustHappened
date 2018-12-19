@@ -1,1 +1,1 @@
-export const SERVER_ROOT = 'http://localhost:59471';
+export const SERVER_ROOT = 'https://tjhdapi.azurewebsites.net/';
