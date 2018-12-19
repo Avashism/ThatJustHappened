@@ -64,8 +64,8 @@ nav {
 
 @media screen and (max-width: 900px) {
     nav{
-        float: left;
-        text-align: center;
+        width: 100%;
+text-align: center;
         alignment: center;
     }
 
@@ -81,7 +81,13 @@ ul li {
 .activate {
     display: block;
 }
-.branding {
-}
+    .branding{
+        width: 100%;
+        text-align: center;
+        margin-left: 20px;
+        font-family: "Sitka Heading";
+        color: white;
+        float: left;
+    }
 }
 
