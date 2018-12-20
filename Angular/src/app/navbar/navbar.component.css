@@ -21,10 +21,9 @@ header{
     background: #8593AE;
     background-blend-mode: luminosity;
     color: white;
-    padding-top:30px;
-    min-height: 70px;
     min-width: 100%;
-}
+    padding-top: 10px;
+ }
 
 
  a{
@@ -37,7 +36,7 @@ header{
 
 }
  a:hover{
-    color: floralwhite;
+    color: black;
 }
 
  ul{
