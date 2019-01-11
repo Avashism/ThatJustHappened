@@ -44,16 +44,16 @@
           </h5>
           <mdb-card-body>
             <div class="md-form">
-              <input  mdbInputDirective required type="text"  class="form-control" name="Username" [(ngModel)] = "Username"  #UserName="ngModel" data-error="" data-success =" "  >
-              <label for="email"> UserName </label>
+              <input  mdbInputDirective required type="text"  class="form-control" id= "Username" name="Username" [(ngModel)] = "Username"  #UserName="ngModel" data-error=" " data-success =" "  >
+              <label for="Username"> UserName </label>
             </div>
             <div class="md-form">
-              <input  mdbInputDirective required type="text"  class="form-control" name="FirstName" [(ngModel)] = "Firstname" data-error=" " data-success =" "  #FirstName="ngModel" >
-              <label for="email"> First name </label>
+              <input  mdbInputDirective required type="text"  class="form-control" id="FirstName" name="FirstName" [(ngModel)] = "Firstname" data-error=" " data-success =" "  #FirstName="ngModel" >
+              <label for="FirstName"> First name </label>
             </div>
             <div class="md-form">
-              <input  mdbInputDirective required type="text"  class="form-control" name="LastName" [(ngModel)] = "Lastname" data-error=" " data-success =" "  #LastName ="ngModel" >
-              <label for="email"> Last name </label>
+              <input  mdbInputDirective required type="text"  class="form-control" id= "LastName" name="LastName" [(ngModel)] = "Lastname" data-error=" " data-success =" "  #LastName ="ngModel" >
+              <label for="LastName"> Last name </label>
             </div>
             <div class="md-form">
               <input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" mdbInputDirective required type="text" id="email" class="form-control" data-error="Invalid Email" data-success =" "  name="email" [(ngModel)] = "Email"  #email="ngModel">
