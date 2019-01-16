@@ -15,6 +15,7 @@ export class LandingPageComponent implements OnInit {
     constructor(public dialogue: MatDialog,
                 public http: HttpClient) {
     }
+    loading;
     dtitle;
     test;
     icon;
@@ -35,6 +36,8 @@ export class LandingPageComponent implements OnInit {
         });
     }
     ngOnInit() {
+        this.loading = null;
+        console.log(this.loading);
         this.http.get<any>
         (`${SERVER_ROOT}/Retrive/GetTopStoriesByReact/1`,
         ).subscribe(
@@ -60,8 +63,8 @@ export class LandingPageComponent implements OnInit {
         ).subscribe(
             response => {
                 this.stories4 =  response;
+                this.loading = "loaded";
             });
-
 
     }
 }

@@ -1,7 +1,5 @@
 
-
 <div class="pb-5">
-    <div class="error">{{responded}}</div>
     <form #f="ngForm" (ngSubmit)="onSubmit()" >
     <div class="flex-center justify-content-center">
         <div class="col-lg-4 my-md-4">
@@ -40,7 +38,7 @@
         </div>
         </div>
     </form>
-    <p class="text-danger" align="center" *ngIf="responded != 'You have logged in successfully.'">{{responded}}</p>
+    <p class="failed" align="center" *ngIf="responded != 'You have logged in successfully.'">{{responded}}</p>
 </div>
 
 
