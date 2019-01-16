@@ -23,7 +23,7 @@ namespace ThatJustHappenedAPI.Database
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //check here if DB doesn't work
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Blogging;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=tcp:tjh.database.windows.net,1433;Initial Catalog=TjhDb;Persist Security Info=False;User ID=Avash;Password=tjhd100%;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
     }
 }

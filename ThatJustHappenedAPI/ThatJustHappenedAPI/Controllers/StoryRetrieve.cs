@@ -27,7 +27,7 @@ namespace ThatJustHappenedAPI.Controllers
             {
                 story.Reacts = this.GetReactsById(story.Id);
             }
-            return Ok(stories);
+            return Ok(stories.Reverse());
         }
         [HttpGet("GetStoriesByReact/{id}")]
         public IActionResult GetStoriesByReact(int id)
@@ -37,7 +37,7 @@ namespace ThatJustHappenedAPI.Controllers
             {
                 story.Reacts = this.GetReactsById(story.Id);
             }
-            stories = stories.OrderBy(s => s.Reacts);
+            stories = stories.OrderByDescending(s => s.Reacts);
             return Ok(stories);
         }
         [HttpGet("GetTopStoriesByReact/{id}")]

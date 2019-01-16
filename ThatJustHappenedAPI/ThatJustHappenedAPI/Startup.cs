@@ -25,7 +25,7 @@ namespace ThatJustHappenedAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TJHContext>(options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Blogging;Trusted_Connection=True;"));
+            services.AddDbContext<TJHContext>(options => options.UseSqlServer("Server=tcp:tjh.database.windows.net,1433;Initial Catalog=TjhDb;Persist Security Info=False;User ID={Avash};Password={tjhd100%};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
             services.AddMvc();
             services.AddCors(options =>
             {

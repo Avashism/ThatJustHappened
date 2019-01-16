@@ -1,38 +1,4 @@
-<!--
 
-<div class="bodii">
-  <div class="error">{{regRespond}}</div>
-
-  <div class="loginbox">
-  <h2>Sign up</h2>
-  <form #f="ngForm" (ngSubmit)="onSubmit()">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="FirstName" name="FirstName" [(ngModel)] = "Firstname" required #FirstName="ngModel">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="LastName" name="LastName" [(ngModel)] = "Lastname" required #LastName ="ngModel" >
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" matInput placeholder="Email" name="email" [(ngModel)] = "Email" required #email="ngModel">
-    </mat-form-field>
-    <small *ngIf="!(!email.errors||!email.errors.pattern)">Invalid Email. </small>
-    <br>
-    <mat-form-field class="example-full-width">
-      <input type="password" matInput placeholder="Password" name="Password" [(ngModel)] = "Password" required #password ="ngModel">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <input type="password" matInput placeholder="Re-type Password" name="RPassword" [(ngModel)] = "rpass" #Rpassword = "ngModel" required compare="Password">
-    </mat-form-field>
-    <br>
-    <small *ngIf="Rpassword.errors && (Rpassword.value != null)">Password do not match</small>
-    <a> <button class="sign" (click)="Register()" [disabled]="f.invalid">Sign up</button></a>
-  </form>
-</div>
-</div>
--->
 <div class="pb-5">
   <div class="error" align="center">{{regRespond}}</div>
   <form #form="ngForm" (ngSubmit)="onSubmit()" >
@@ -48,11 +14,11 @@
               <label for="Username"> UserName </label>
             </div>
             <div class="md-form">
-              <input  mdbInputDirective required type="text"  class="form-control" id="FirstName" name="FirstName" [(ngModel)] = "Firstname" data-error=" " data-success =" "  #FirstName="ngModel" >
+              <input  mdbInputDirective required type="text"  class="form-control" id="FirstName" name="Firstname" [(ngModel)] = "Firstname" data-error=" " data-success =" "  #FirstName="ngModel" >
               <label for="FirstName"> First name </label>
             </div>
             <div class="md-form">
-              <input  mdbInputDirective required type="text"  class="form-control" id= "LastName" name="LastName" [(ngModel)] = "Lastname" data-error=" " data-success =" "  #LastName ="ngModel" >
+              <input  mdbInputDirective required type="text"  class="form-control" id= "LastName" name="Lastname" [(ngModel)] = "Lastname" data-error=" " data-success =" "  #LastName ="ngModel" >
               <label for="LastName"> Last name </label>
             </div>
             <div class="md-form">
